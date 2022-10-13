@@ -28,8 +28,8 @@ module "ecs-fargate" {
   cluster_id = aws_ecs_cluster.cluster.id
 
   task_container_image   = var.dockerimage
-  task_definition_cpu    = 256
-  task_definition_memory = 512
+  task_definition_cpu    = 512
+  task_definition_memory = 1024
 
   task_container_port             = 80
   task_container_assign_public_ip = false

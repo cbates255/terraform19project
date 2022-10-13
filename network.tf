@@ -1,4 +1,4 @@
-
+#Create a VPC with 2 private subnets
 
 module "vpc" {
   source = "terraform-aws-modules/vpc/aws"
